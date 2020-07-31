@@ -34,4 +34,7 @@ public class DepositoWhislist implements Serializable {
 
     @Column(name = "status")
     private String status;
+
+    @Column(name = "whislist")
+    private String whislist;
 }

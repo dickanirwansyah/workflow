@@ -34,4 +34,7 @@ public class BillPaymentWhislist implements Serializable {
 
     @Column(name = "deleted")
     private boolean deleted;
+
+    @Column(name = "whislist")
+    private String whislist;
 }
