@@ -20,6 +20,10 @@ public class ResponseApi {
     }
 
     public static ResponseApi error(String message){
-        return new ResponseApi(200, message, null);
+        return new ResponseApi(500, message, null);
+    }
+
+    public static ResponseApi authError(){
+        return new ResponseApi(403, "this resource is authenticated", null);
     }
 }
